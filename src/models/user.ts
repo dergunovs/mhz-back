@@ -3,9 +3,9 @@ import { Schema, model } from 'mongoose';
 import { IUser } from '../interface/index.js';
 
 const userSchema = new Schema<IUser>({
-  first_name: { type: String, required: true },
-  last_name: { type: String, required: true },
-  phone: { type: String, required: true },
+  first_name: { type: String },
+  last_name: { type: String },
+  phone: { type: String },
   role: { type: String, required: true },
   password: { type: String, required: true },
   email: { type: String, required: true, unique: true },

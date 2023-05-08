@@ -23,6 +23,7 @@
     "xmlbuilder2": "^3.1.0"
   },
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
     "@types/node": "^20.1.0",
     "concurrently": "^8.0.1",
     "cross-env": "^7.0.3",

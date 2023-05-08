@@ -18,22 +18,22 @@ export interface IAdress {
 }
 
 export interface IUser extends IEntity {
-  first_name: string;
-  last_name: string;
-  phone: string;
+  first_name?: string;
+  last_name?: string;
+  phone?: string;
   role: 'user' | 'admin';
   password: string;
   email: string;
   isEmailConfirmed?: boolean;
   card?: string;
-  cart: ICart;
-  orders: IOrder[];
-  favouriteProducts: IProduct[];
-  comparisons: IComparison[];
-  configurations: IConfiguration[];
+  cart?: ICart;
+  orders?: IOrder[];
+  favouriteProducts?: IProduct[];
+  comparisons?: IComparison[];
+  configurations?: IConfiguration[];
   adress?: IAdress;
   date_logged_in?: Date;
-  date_updated: Date;
+  date_updated?: Date;
 }
 
 export interface ICart extends IEntity {
