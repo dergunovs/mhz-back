@@ -1,6 +1,6 @@
 import { Schema, model } from 'mongoose';
 
-import { IManufacturer } from '../interface';
+import { IManufacturer } from '../interface/index.js';
 
 const manufacturerSchema = new Schema<IManufacturer>({
   title: { type: String, required: true },

@@ -1,6 +1,6 @@
 import { Schema, model } from 'mongoose';
 
-import { ICategoryField } from '../interface';
+import { ICategoryField } from '../interface/index.js';
 
 const categoryFieldSchema = new Schema<ICategoryField>({
   title: { type: String, required: true },

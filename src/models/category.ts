@@ -1,6 +1,6 @@
 import { Schema, model } from 'mongoose';
 
-import { ICategory } from '../interface';
+import { ICategory } from '../interface/index.js';
 
 const categorySchema = new Schema<ICategory>({
   title: { type: String, required: true },

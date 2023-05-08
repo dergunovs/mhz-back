@@ -1,6 +1,6 @@
 import { Schema, model } from 'mongoose';
 
-import { IConfiguration } from '../interface';
+import { IConfiguration } from '../interface/index.js';
 
 const configurationSchema = new Schema<IConfiguration>({
   title: { type: String, required: true },

@@ -1,6 +1,6 @@
 import { Schema, model } from 'mongoose';
 
-import { IComparison } from '../interface';
+import { IComparison } from '../interface/index.js';
 
 const comparisonSchema = new Schema<IComparison>({
   products: [{ type: Schema.Types.ObjectId, ref: 'Product' }],

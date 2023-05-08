@@ -1,6 +1,6 @@
 import { Schema, model } from 'mongoose';
 
-import { IProduct } from '../interface';
+import { IProduct } from '../interface/index.js';
 
 const productSchema = new Schema<IProduct>({
   title: { type: String, required: true },

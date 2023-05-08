@@ -1,6 +1,6 @@
 import { Schema, model } from 'mongoose';
 
-import { IOrder } from '../interface';
+import { IOrder } from '../interface/index.js';
 
 const orderSchema = new Schema<IOrder>({
   status: { type: String, required: true, default: 'payment' },

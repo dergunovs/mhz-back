@@ -1,7 +1,7 @@
 import { FastifyReply, FastifyRequest } from 'fastify';
 
-import User from '../../../models/user';
-import { IFastifyInstance } from '../../../interface';
+import User from '../../../models/user.js';
+import { IFastifyInstance } from '../../../interface/index.js';
 
 export default async function (fastify: IFastifyInstance) {
   fastify.get(

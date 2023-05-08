@@ -1,6 +1,7 @@
-import { buildApp, AppOptions } from './app';
+import { buildApp, AppOptions } from './app.js';
 
-require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
 
 const options: AppOptions = {
   logger: true,

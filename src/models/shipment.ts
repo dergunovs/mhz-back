@@ -1,6 +1,6 @@
 import { Schema, model } from 'mongoose';
 
-import { IShipment } from '../interface';
+import { IShipment } from '../interface/index.js';
 
 const shipmentSchema = new Schema<IShipment>({
   adress: {

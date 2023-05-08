@@ -1,9 +1,12 @@
 import Fastify, { FastifyServerOptions } from 'fastify';
 
 import path from 'path';
-import autoload from '@fastify/autoload';
+import { fileURLToPath } from 'url';
 
+import autoload from '@fastify/autoload';
 import { Schema, connect } from 'mongoose';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 Schema.Types.Boolean.convertToFalse.add('');
 connect(`mongodb://127.0.0.1/${process.env.DATABASE}`);
