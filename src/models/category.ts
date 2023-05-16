@@ -1,6 +1,6 @@
 import { Schema, model } from 'mongoose';
 
-import { ICategory } from '../interface/index.js';
+import { ICategory } from 'mhz-types';
 
 const categorySchema = new Schema<ICategory>({
   title: { type: String, required: true },

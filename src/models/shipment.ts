@@ -1,6 +1,6 @@
 import { Schema, model } from 'mongoose';
 
-import { IShipment } from '../interface/index.js';
+import { IShipment } from 'mhz-types';
 
 const shipmentSchema = new Schema<IShipment>({
   adress: {

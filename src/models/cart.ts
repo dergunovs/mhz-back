@@ -1,6 +1,6 @@
 import { Schema, model } from 'mongoose';
 
-import { ICart } from '../interface/index.js';
+import { ICart } from 'mhz-types';
 
 const cartSchema = new Schema<ICart>({
   products: [

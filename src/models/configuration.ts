@@ -1,6 +1,6 @@
 import { Schema, model } from 'mongoose';
 
-import { IConfiguration } from '../interface/index.js';
+import { IConfiguration } from 'mhz-types';
 
 const configurationSchema = new Schema<IConfiguration>({
   title: { type: String, required: true },

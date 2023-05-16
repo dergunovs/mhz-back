@@ -1,6 +1,6 @@
 import { Schema, model } from 'mongoose';
 
-import { IComparison } from '../interface/index.js';
+import { IComparison } from 'mhz-types';
 
 const comparisonSchema = new Schema<IComparison>({
   products: [{ type: Schema.Types.ObjectId, ref: 'Product' }],

@@ -1,6 +1,6 @@
 import { Schema, model } from 'mongoose';
 
-import { IUser } from '../interface/index.js';
+import { IUser } from 'mhz-types';
 
 const userSchema = new Schema<IUser>({
   first_name: { type: String },

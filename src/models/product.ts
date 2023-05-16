@@ -1,6 +1,6 @@
 import { Schema, model } from 'mongoose';
 
-import { IProduct } from '../interface/index.js';
+import { IProduct } from 'mhz-types';
 
 const productSchema = new Schema<IProduct>({
   title: { type: String, required: true },
